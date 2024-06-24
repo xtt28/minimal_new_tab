@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --background: white;
+  --foreground: black;
+  --foreground-muted: gray;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: black;
+    --foreground: white;
+    --foreground-muted: gray;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clock {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  color: var(--foreground);
+  padding: 0;
+  font-family: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 60pt;
+}
+
+.clock__text {
+  color: var(--foreground-muted);
+  max-width: 40ch;
+  padding: 50px;
+  margin: auto;
+}
+
+.clock__time, .clock__date {
+  color: var(--foreground);
+  font-weight: bold;
+}
